@@ -12,8 +12,9 @@
     $('#calculate').click(function () {
       var w = parseFloat($('#weight').val());
       var h = parseFloat($('#height').val());
+      var calculationMethod = $('#calculationMethod').val();
       var person = new Person({weight: w, height: h});
-      person.calculate_bmi();
+      person.calculate_bmi(calculationMethod);
       $('#display_value').html('Your BMI is ' + person.bmiValue);
       $('#display_message').html('and you are '+ person.bmiMessage);
     });
@@ -23,6 +24,10 @@
     <form>
       <input type="text" id="weight" placeholder="Weight">
       <input type="text" id="height" placeholder="Height">
+      <select id="calculationMethod">
+        <option value="metric" selected="">Metric</option>
+        <option value="imperial">Imperial</option>
+      </select>
       <input type="button" id="calculate" value="Calculate">
     </form>
     <div>
