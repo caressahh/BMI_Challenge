@@ -17,7 +17,7 @@ describe("Person", function() {
   metricPerson.calculate_bmi('metric');
   expect(metricPerson.bmiValue).toEqual(26.01);
 });
-it("should have a BMI Message", function() {
+it("should have a metric BMI Message", function() {
   metricPerson.calculate_bmi('metric');
   expect(metricPerson.bmiMessage).toEqual("Overweight");
 });
@@ -33,7 +33,7 @@ imperialPerson.calculate_bmi('imperial');
 expect(imperialPerson.bmiValue).toEqual(26.12);
 });
 
-it("should have a BMI Message", function() {
+it("should have a imperial BMI Message", function() {
   imperialPerson.calculate_bmi('imperial');
   expect(imperialPerson.bmiMessage).toEqual("Overweight");
 });
