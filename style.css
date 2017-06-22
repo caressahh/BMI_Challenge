@@ -1,11 +1,11 @@
 .metricImage {
-  background-image: url("/images/metric.jpg");
+  background-image: url("https://caressahh.github.io/BMI_Challenge/images/metric.jpg");
   background-attachment: fixed;
   background-position: 50% 50%;
   background-size: cover;
 }
 .imperialImage {
-  background-image: url("/images/Donald-Trump.jpg");
+  background-image: url("https://caressahh.github.io/BMI_Challenge/images/Donald-Trump.jpg");
   background-attachment: fixed;
   background-position: 50% 50%;
   background-size: cover;
